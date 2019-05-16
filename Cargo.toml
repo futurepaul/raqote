@@ -12,7 +12,7 @@ keywords = ["2d", "graphics"]
 
 [dependencies]
 euclid = "0.19.8"
-font-kit = "0.1.0"
+font-kit = { git="https://github.com/futurepaul/font-kit", branch="mac-origin-fix" } 
 lyon_geom = "0.12.6"
 png = "0.14.0"
 typed-arena = "1.4.1"

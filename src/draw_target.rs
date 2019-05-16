@@ -464,8 +464,6 @@ impl DrawTarget {
             );
             combined_bounds = match bounds {
                 Ok(bounds) => {
-                    dbg!(position);
-                    dbg!(bounds);
                     combined_bounds.union(&bounds)
                 }
                 _ => panic!(),
