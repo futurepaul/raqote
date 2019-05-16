@@ -442,7 +442,7 @@ impl DrawTarget {
             positions.push(start);
             start += font.advance(id).unwrap() / 96.;
         }
-        self.draw_glyphs(font, point_size, &ids, &positions, src, options);
+        self.draw_glyphs(Arc::new(font), point_size, &ids, &positions, src, options);
     }
 
     /// Note: text positioning works very poorly because of limitations and bugs in font-kit
