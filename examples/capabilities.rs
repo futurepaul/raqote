@@ -4,6 +4,8 @@ use raqote::*;
 use std::fs::*;
 use sw_composite::{Gradient, GradientStop, Image};
 
+use std::sync::Arc;
+
 use font_kit::family_name::FamilyName;
 use font_kit::properties::Properties;
 use font_kit::source::SystemSource;
@@ -127,7 +129,7 @@ fn main() {
         .unwrap();
 
     dt.draw_text(
-        &font,
+        Arc::new(font),
         24.,
         "Hello",
         Point::new(0., 100.),
