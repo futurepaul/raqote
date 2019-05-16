@@ -446,7 +446,7 @@ impl DrawTarget {
     /// Note: text positioning works very poorly because of limitations and bugs in font-kit
     pub fn draw_glyphs(
         &mut self,
-        font: &Font,
+        font: Arc<Font>,
         point_size: f32,
         ids: &[u32],
         positions: &[Point],
