@@ -18,6 +18,8 @@ use font_kit::hinting::HintingOptions;
 use std::fs::*;
 use std::io::BufWriter;
 
+use std::sync::Arc;
+
 use png::HasParameters;
 
 use crate::stroke::*;
